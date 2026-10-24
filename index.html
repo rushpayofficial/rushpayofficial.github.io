@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#07111f">
-  <meta name="description" content="RushPay referral guide. Join using invite code VENOMM and get help through our Telegram channel.">
-  <title>RushPay Referral Guide | VENOMM</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #07111f;
-      color: #f5f7ff;
-      line-height: 1.6;
-    }
-    header {
-      padding: 22px 18px;
-      text-align: center;
-      border-bottom: 1px solid #23334b;
-    }
-    .logo { font-size: 27px; font-weight: 800; color: #65c8ff; }
-    .tag { color: #aab8ce; font-size: 13px; }
-    main { max-width: 680px; margin: auto; padding: 28px 18px; }
-    .hero {
-      text-align: center;
-      padding: 30px 18px;
-      background: linear-gradient(145deg, #132846, #101a30);
-      border: 1px solid #2c426
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Independent RushPay referral guide. Join with invite code VENOMM and find support resources.">
+<title>RushPay Referral Guide | VENOMM</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#07111f;color:#f5f7ff;line-height:1.6}
+header{text-align:center;padding:24px 16px;border-bottom:1px solid #26364b}
+.logo{font-size:30px;font-weight:800;color:#65c8ff}
+.tag{font-size:13px;color:#aab8ce}
+main{max-width:600px;margin:35px auto;padding:20px}
+.card{background:linear-gradient(145deg,#132846,#101a30);border:1px solid #2c4260;border-radius:18px;padding:26px 20px;text-align:center;box-shadow:0 12px 35px #0005}
+h1{font-size:27px;line-height:1.3;margin:12px 0}
+p{color:#c5d0e2}
+.code{font-size:30px;font-weight:bold;letter-spacing:4px;color:#ffd36a;margin:18px 0}
+button,a.btn{display:block;width:100%;padding:14px;margin:12px 0;border:0;border-radius:10px;font-size:16px;font-weight:bold;text-decoration:none;text-align:center;cursor:pointer}
+.primary{background:#2588ff;color:white}
+.secondary{background:#17263c;color:#f5f7ff;border:1px solid #3b5271!important}
+.note{font-size:12px;color:#9eacc1;margin-top:25px}
+footer{text-align:center;color:#8594aa;font-size:12px;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">RUSHPAY</div>
+<div class="tag">INDEPENDENT REFERRAL GUIDE</div>
+</header>
+<main>
+<section class="card">
+<p>WELCOME • REFERRAL GUIDE</p>
+<h1>Get Started with RushPay</h1>
+<p>Use the referral code below when joining through our referral link.</p>
+<div class="code" id="code">VENOMM</div>
+<button class="secondary" onclick="copyCode()">Copy Invite Code</button>
+<a class="btn primary" href="https://land.rushpay.top?inviteCode=VENOMM" target="_blank" rel="noopener noreferrer">Continue to Referral Link ↗</a>
+<a class="btn secondary" href="https://t.me/rushpayguid" target="_blank" rel="noopener noreferrer">Join Telegram Support</a>
+<p id="message" aria-live="polite"></p>
+<p class="note">This is an independent referral guide and is not the official RushPay website. Offers, fees and benefits may change and are not guaranteed. Verify all details before making payments. Never share your password or OTP.</p>
+</section>
+</main>
+<footer>Referral code: VENOMM</footer>
+<script>
+function copyCode(){
+if(navigator.clipboard&&navigator.clipboard.writeText){
+navigator.clipboard.writeText("VENOMM").then(function(){
+document.getElementById("message").textContent="Invite code copied!";
+}).catch(function(){fallbackCopy()});
+}else{fallbackCopy()}
+}
+function fallbackCopy(){
+var input=document.createElement("textarea");
+input.value="VENOMM";
+document.body.appendChild(input);
+input.select();
+try{
+document.execCommand("copy");
+document.getElementById("message").textContent="Invite code copied!";
+}catch(e){
+document.getElementById("message").textContent="Please copy VENOMM manually.";
+}
+input.remove();
+}
+</script>
+</body>
+</html>
