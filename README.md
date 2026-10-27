@@ -1,2 +1,2 @@
-# venommrushpay.github.io
+# rushpayofficial.github.io
 RushPay Referral Guide
